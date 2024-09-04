@@ -1,0 +1,21 @@
+{
+  "name": "github-alert-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --test-scheduled",
+    "start": "wrangler dev --test-scheduled",
+    "test": "jest --silent",
+    "test-with-coverage": "jest --coverage",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240903.0",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.2",
+    "wrangler": "^3.60.3"
+  }
+}
