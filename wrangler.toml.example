@@ -1,0 +1,17 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "github-alert-bot"
+main = "src/index.ts"
+compatibility_date = "2024-09-03"
+
+[triggers]
+crons = ["*/5 * * * *"] # every 5 minutes
+
+# Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#kv-namespaces
+[[kv_namespaces]]
+binding = "GITHUB_ALERT_BOT_KV"
+id = "xxx"
+
+# Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
+[observability]
+enabled = true
+head_sampling_rate = 1
