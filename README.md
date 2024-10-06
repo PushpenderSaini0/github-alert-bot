@@ -1,4 +1,5 @@
 ## Github Alert Bot
+[![Unit Test](https://github.com/PushpenderSaini0/github-alert-bot/actions/workflows/unit-test.yml/badge.svg?branch=main)](https://github.com/PushpenderSaini0/github-alert-bot/actions/workflows/unit-test.yml)
 
 This is a simple bot that sends a message to a Google Chat room when some event happens in a Github repository.
 
