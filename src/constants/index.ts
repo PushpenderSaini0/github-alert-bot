@@ -17,7 +17,7 @@ const SEED_STATE_KEY_PREFIX = 'SEED_STATE_';
 const GITHUB_GRAPHQL_ENDPOINT = 'https://api.github.com/graphql';
 const GITHUB_SEARCH_FILTERS = 'is:open+type:pr+archived:false+user:cdapio+user:data-integrations';
 
-const APP_VERSION = 'v0.1.0';
+const APP_VERSION = 'v0.1.1';
 
 enum trackedGithubUserName {
   PUSHPENDER_SAINI = 'psainics',
