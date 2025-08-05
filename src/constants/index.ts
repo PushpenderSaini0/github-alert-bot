@@ -27,7 +27,8 @@ enum trackedGithubUserName {
   ANIL_MAHAJAN = 'anilm67',
   PRINCE_DATTA = 'prince-cs',
   KRISH = 'Krish-cloudsufi',
-  ABHISHEK_KUMAR = 'AbhishekKumar9984'
+  ABHISHEK_KUMAR = 'AbhishekKumar9984',
+  SANCHIT_GARG = 'sgarg-CS'
 }
 const githubUserNameMap = {
   psainics: 'Pushpender Saini',
@@ -39,6 +40,7 @@ const githubUserNameMap = {
   'prince-cs': 'Prince Datta',
   'Krish-cloudsufi': 'Krish',
   AbhishekKumar9984: 'Abhishek Kumar',
+  'sgarg-CS': 'Sanchit Garg',
 } as GithubUserNameMap;
 
 const TRACKED_USERS_ARRAY: trackedGithubUserName[] = [
