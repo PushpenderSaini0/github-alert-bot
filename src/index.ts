@@ -12,14 +12,13 @@ import { prInfoCard } from './templates/pr_info_card';
 export default {
   /* HTTP handler to suppress error */
   async fetch(event, env, ctx): Promise<Response> {
-    return new Response(`Hello World! ${APP_VERSION}`);
+    return new Response(APP_VERSION);
   },
 
   /* corn job handler */
   async scheduled(event, env, ctx): Promise<void> {
     /* get all clients */
     const kvClient = getKVClient(env);
-    const chatClientDev = getChatClient(env.DEV_ROOM_URL);
     const chatClientProd = getChatClient(env.PROD_ROOM_URL);
     const githubClient = getGithubClient(env.GITHUB_API_TOKEN);
 
